@@ -3,61 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dempsey Heating And Cooling LLC | Wheelersburg, OH</title>
-    <meta name="description" content="Premier HVAC contractor in Wheelersburg, Ohio. Heating, Air Conditioning, and expert climate control." />
+    
+    <!-- SEO & Search Engine Logic -->
+    <title>Dempsey Heating & Cooling | Wheelersburg HVAC Experts</title>
+    <meta name="description" content="Premier HVAC contractor in Wheelersburg, Ohio. Expert Furnace repair, Air Conditioning installation, and emergency heating services. Call (740) 250-8532 for a free estimate." />
+    <meta name="keywords" content="HVAC Wheelersburg, Furnace Repair Ohio, AC Installation, Heating and Cooling, Dempsey Heating, HVAC Contractor Portsmouth, Emergency HVAC" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Dempsey Heating And Cooling LLC" />
+    
+    <!-- Social Media Sharing (OpenGraph) -->
+    <meta property="og:title" content="Dempsey Heating & Cooling | Trusted HVAC Experts" />
+    <meta property="og:description" content="Expert HVAC services in Wheelersburg, OH. 24/7 Emergency repair, furnace installation, and AC maintenance. Rated 5.0 Stars." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Browser Tab Icon (Favicon) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❄️</text></svg>">
     
     <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Tailwind CSS (Using CDN for simplicity in this setup, works in production) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            },
-            colors: {
-              brand: {
-                primary: '#0284c7', // HVAC Blue (Sky 600)
-                dark: '#ffffff',    // White (Main Background)
-                card: '#f8fafc',    // Slate-50 (Light Card Background)
-                light: '#0f172a',   // Slate-900 (Main Text - Dark)
-                muted: '#64748b',   // Slate-500 (Muted Text)
-                accent: '#dc2626',  // Heating Red (Red 600)
-              }
-            },
-            animation: {
-              'fade-in': 'fadeIn 0.5s ease-out',
-            },
-            keyframes: {
-              fadeIn: {
-                '0%': { opacity: '0', transform: 'translateY(10px)' },
-                '100%': { opacity: '1', transform: 'translateY(0)' },
-              }
-            }
-          }
-        }
-      }
-    </script>
-<script type="importmap">
+  <script type="importmap">
 {
   "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
     "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "vite": "https://aistudiocdn.com/vite@^7.2.4"
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
   }
 }
 </script>
 </head>
-  <body class="bg-brand-dark text-brand-light antialiased">
+  <body class="bg-brand-dark text-brand-light antialiased selection:bg-brand-primary selection:text-white">
     <div id="root"></div>
 
     <!-- 

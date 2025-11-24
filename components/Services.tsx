@@ -18,7 +18,7 @@ export const Services: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
           
           {/* Card 1: Heating */}
-          <div className="bg-brand-card p-10 rounded-sm border border-slate-200 border-t-4 border-t-brand-accent shadow-xl shadow-slate-200/50 hover:-translate-y-1 transition-transform duration-300 relative group overflow-hidden">
+          <div className="bg-brand-card p-10 rounded-sm border border-white/5 border-t-4 border-t-brand-accent shadow-xl shadow-black/20 hover:-translate-y-1 transition-transform duration-300 relative group overflow-hidden">
             <div className="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-[0.07] transition-opacity">
               <Flame className="w-40 h-40 text-brand-accent" />
             </div>
@@ -39,7 +39,7 @@ export const Services: React.FC = () => {
           </div>
 
           {/* Card 2: Cooling */}
-          <div className="bg-brand-card p-10 rounded-sm border border-slate-200 border-t-4 border-t-brand-primary shadow-xl shadow-slate-200/50 hover:-translate-y-1 transition-transform duration-300 relative group overflow-hidden">
+          <div className="bg-brand-card p-10 rounded-sm border border-white/5 border-t-4 border-t-brand-primary shadow-xl shadow-black/20 hover:-translate-y-1 transition-transform duration-300 relative group overflow-hidden">
              <div className="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-[0.07] transition-opacity">
               <Snowflake className="w-40 h-40 text-brand-primary" />
             </div>
@@ -60,7 +60,7 @@ export const Services: React.FC = () => {
           </div>
 
           {/* Card 3: Maintenance */}
-          <div className="bg-brand-card p-10 rounded-sm border border-slate-200 border-t-4 border-t-brand-muted hover:border-t-brand-primary transition-colors shadow-xl shadow-slate-200/50 hover:-translate-y-1 duration-300 relative group overflow-hidden">
+          <div className="bg-brand-card p-10 rounded-sm border border-white/5 border-t-4 border-t-brand-muted hover:border-t-brand-primary transition-colors shadow-xl shadow-black/20 hover:-translate-y-1 duration-300 relative group overflow-hidden">
              <div className="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-[0.07] transition-opacity">
               <Fan className="w-40 h-40 text-brand-light" />
             </div>

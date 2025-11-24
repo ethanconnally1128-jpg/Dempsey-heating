@@ -45,12 +45,13 @@ export const Navbar: React.FC = () => {
   }, []);
 
   // Dynamic classes based on scroll state
+  // CHANGED: Use dark background with backdrop blur for scroll state
   const navClasses = scrolled 
-    ? 'bg-white/95 backdrop-blur-lg border-b border-brand-primary/20 py-3 shadow-md' 
+    ? 'bg-brand-dark/95 backdrop-blur-lg border-b border-white/10 py-3 shadow-md' 
     : 'bg-transparent py-5';
     
-  const textClasses = scrolled ? 'text-brand-light' : 'text-white';
-  const jColorClass = scrolled ? 'text-brand-light' : 'text-white';
+  const textClasses = 'text-brand-light';
+  const jColorClass = 'text-brand-light';
   const subTextClasses = scrolled ? 'text-brand-muted' : 'text-gray-300';
   const phoneIconClasses = scrolled ? 'bg-brand-primary text-white' : 'bg-brand-primary/20 text-brand-primary';
 

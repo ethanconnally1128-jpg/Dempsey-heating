@@ -74,7 +74,7 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-brand-dark relative border-t border-slate-100">
+    <section id="contact" className="py-24 bg-brand-dark relative border-t border-white/5">
       <div className="container mx-auto px-4 md:px-6">
         
         {/* Reviews Section */}
@@ -85,34 +85,34 @@ export const Contact: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
-            <div className="bg-brand-card p-8 rounded-sm border border-slate-100 shadow-lg shadow-slate-200/50">
+            <div className="bg-brand-card p-8 rounded-sm border border-white/5 shadow-lg shadow-black/20">
               <div className="flex gap-1 text-brand-primary mb-6">
                 <Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" />
               </div>
               <p className="text-brand-muted mb-6 italic">"Dempsey saved us in the middle of summer. Our AC died and they had it running again in no time. Honest and fair pricing."</p>
-              <div className="flex justify-between items-center text-sm border-t border-slate-200 pt-4">
+              <div className="flex justify-between items-center text-sm border-t border-white/10 pt-4">
                 <span className="font-bold text-brand-light uppercase tracking-wider">Michael T.</span>
                 <span className="text-brand-primary text-xs">AC Repair</span>
               </div>
             </div>
 
-            <div className="bg-brand-card p-8 rounded-sm border border-slate-100 shadow-lg shadow-slate-200/50">
+            <div className="bg-brand-card p-8 rounded-sm border border-white/5 shadow-lg shadow-black/20">
               <div className="flex gap-1 text-brand-primary mb-6">
                 <Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" />
               </div>
               <p className="text-brand-muted mb-6 italic">"Great experience. They installed our new furnace professionally and left everything clean. Highly recommend!"</p>
-              <div className="flex justify-between items-center text-sm border-t border-slate-200 pt-4">
+              <div className="flex justify-between items-center text-sm border-t border-white/10 pt-4">
                 <span className="font-bold text-brand-light uppercase tracking-wider">Karen W.</span>
                 <span className="text-brand-primary text-xs">Furnace Install</span>
               </div>
             </div>
 
-            <div className="bg-brand-card p-8 rounded-sm border border-slate-100 shadow-lg shadow-slate-200/50">
+            <div className="bg-brand-card p-8 rounded-sm border border-white/5 shadow-lg shadow-black/20">
               <div className="flex gap-1 text-brand-primary mb-6">
                 <Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" />
               </div>
               <p className="text-brand-muted mb-6 italic">"Reliable and friendly service. It's hard to find good contractors these days, but Dempsey delivers."</p>
-              <div className="flex justify-between items-center text-sm border-t border-slate-200 pt-4">
+              <div className="flex justify-between items-center text-sm border-t border-white/10 pt-4">
                 <span className="font-bold text-brand-light uppercase tracking-wider">Steve R.</span>
                 <span className="text-brand-primary text-xs">Maintenance</span>
               </div>
@@ -165,7 +165,7 @@ export const Contact: React.FC = () => {
           </div>
 
           {/* Form */}
-          <div className="bg-brand-card p-8 md:p-10 rounded-sm border-t-4 border-brand-primary shadow-2xl shadow-slate-200/50">
+          <div className="bg-brand-card p-8 md:p-10 rounded-sm border-t-4 border-brand-primary shadow-2xl shadow-black/30">
             {isSubmitted ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-12 animate-fade-in">
                 <div className="w-20 h-20 bg-brand-primary/10 rounded-full flex items-center justify-center mb-6 text-brand-primary">
@@ -199,7 +199,7 @@ export const Contact: React.FC = () => {
                     required
                     value={formState.name}
                     onChange={(e) => setFormState({...formState, name: e.target.value})}
-                    className="w-full bg-white border border-gray-200 rounded-sm px-4 py-4 text-brand-light focus:ring-1 focus:ring-brand-primary focus:border-brand-primary outline-none transition-all placeholder:text-gray-400"
+                    className="w-full bg-brand-dark border border-white/10 rounded-sm px-4 py-4 text-brand-light focus:ring-1 focus:ring-brand-primary focus:border-brand-primary outline-none transition-all placeholder:text-gray-600"
                     placeholder="Enter your name"
                   />
                 </div>
@@ -213,7 +213,7 @@ export const Contact: React.FC = () => {
                     required
                     value={formState.phone}
                     onChange={(e) => setFormState({...formState, phone: e.target.value})}
-                    className="w-full bg-white border border-gray-200 rounded-sm px-4 py-4 text-brand-light focus:ring-1 focus:ring-brand-primary focus:border-brand-primary outline-none transition-all placeholder:text-gray-400"
+                    className="w-full bg-brand-dark border border-white/10 rounded-sm px-4 py-4 text-brand-light focus:ring-1 focus:ring-brand-primary focus:border-brand-primary outline-none transition-all placeholder:text-gray-600"
                     placeholder="(740) 250-8532"
                   />
                 </div>
@@ -240,7 +240,7 @@ export const Contact: React.FC = () => {
                     rows={4}
                     value={formState.details}
                     onChange={(e) => setFormState({...formState, details: e.target.value})}
-                    className="w-full bg-white border border-gray-200 rounded-sm px-4 py-4 text-brand-light focus:ring-1 focus:ring-brand-primary focus:border-brand-primary outline-none transition-all resize-none placeholder:text-gray-400"
+                    className="w-full bg-brand-dark border border-white/10 rounded-sm px-4 py-4 text-brand-light focus:ring-1 focus:ring-brand-primary focus:border-brand-primary outline-none transition-all resize-none placeholder:text-gray-600"
                     placeholder="E.g., AC isn't cooling, furnace maintenance needed..."
                   />
                 </div>
@@ -267,7 +267,7 @@ export const Contact: React.FC = () => {
         </div>
         
         {/* Footer */}
-        <div className="mt-24 border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-brand-muted text-xs uppercase tracking-wider font-medium">
+        <div className="mt-24 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-brand-muted text-xs uppercase tracking-wider font-medium">
            <p>&copy; {new Date().getFullYear()} Dempsey Heating And Cooling LLC. All rights reserved.</p>
            <div className="flex gap-6">
              <span>Licensed & Insured</span>
