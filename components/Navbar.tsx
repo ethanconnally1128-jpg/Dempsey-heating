@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, ThermometerSnowflake } from 'lucide-react';
+import { Phone } from 'lucide-react';
 
 const DempseyLogo = ({ className, jColorClass }: { className?: string, jColorClass: string }) => (
   <svg 
